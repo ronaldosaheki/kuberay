@@ -30,8 +30,8 @@ Please choose the version you would like to install. The example below uses the 
 
 ```
 export KUBERAY_VERSION=v0.3.0
-kubectl create -k "github.com/ray-project/kuberay/manifests/cluster-scope-resources?ref=${KUBERAY_VERSION}&timeout=90s"
-kubectl apply -k "github.com/ray-project/kuberay/manifests/base?ref=${KUBERAY_VERSION}&timeout=90s"
+kubectl create -k "github.com/ronaldosaheki/kuberay/manifests/cluster-scope-resources?ref=${KUBERAY_VERSION}&timeout=90s"
+kubectl apply -k "github.com/ronaldosaheki/kuberay/manifests/base?ref=${KUBERAY_VERSION}&timeout=90s"
 ```
 
 > Observe that we must use `kubectl create` to install cluster-scoped resources. The corresponding `kubectl apply` command will not work. See [KubeRay issue #271](https://github.com/ray-project/kuberay/issues/271).
